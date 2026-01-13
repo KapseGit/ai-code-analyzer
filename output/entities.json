@@ -1,0 +1,1721 @@
+[
+  {
+    "type": "class",
+    "name": "PartialPaymentValidationError",
+    "file": "sales_invoice.py",
+    "line": 54,
+    "inherits": [
+      "frappe.ValidationError"
+    ]
+  },
+  {
+    "type": "class",
+    "name": "SalesInvoice",
+    "file": "sales_invoice.py",
+    "line": 58,
+    "inherits": [
+      "SellingController"
+    ]
+  },
+  {
+    "type": "function",
+    "name": "get_total_in_party_account_currency",
+    "file": "sales_invoice.py",
+    "line": 2228
+  },
+  {
+    "type": "function",
+    "name": "is_overdue",
+    "file": "sales_invoice.py",
+    "line": 2236
+  },
+  {
+    "type": "function",
+    "name": "get_discounting_status",
+    "file": "sales_invoice.py",
+    "line": 2262
+  },
+  {
+    "type": "function",
+    "name": "validate_inter_company_party",
+    "file": "sales_invoice.py",
+    "line": 2286
+  },
+  {
+    "type": "function",
+    "name": "update_linked_doc",
+    "file": "sales_invoice.py",
+    "line": 2328
+  },
+  {
+    "type": "function",
+    "name": "unlink_inter_company_doc",
+    "file": "sales_invoice.py",
+    "line": 2338
+  },
+  {
+    "type": "function",
+    "name": "get_list_context",
+    "file": "sales_invoice.py",
+    "line": 2351
+  },
+  {
+    "type": "function",
+    "name": "get_bank_cash_account",
+    "file": "sales_invoice.py",
+    "line": 2368
+  },
+  {
+    "type": "function",
+    "name": "make_maintenance_schedule",
+    "file": "sales_invoice.py",
+    "line": 2383
+  },
+  {
+    "type": "function",
+    "name": "make_delivery_note",
+    "file": "sales_invoice.py",
+    "line": 2400
+  },
+  {
+    "type": "function",
+    "name": "make_sales_return",
+    "file": "sales_invoice.py",
+    "line": 2446
+  },
+  {
+    "type": "function",
+    "name": "get_inter_company_details",
+    "file": "sales_invoice.py",
+    "line": 2452
+  },
+  {
+    "type": "function",
+    "name": "get_internal_party",
+    "file": "sales_invoice.py",
+    "line": 2489
+  },
+  {
+    "type": "function",
+    "name": "validate_inter_company_transaction",
+    "file": "sales_invoice.py",
+    "line": 2513
+  },
+  {
+    "type": "function",
+    "name": "make_inter_company_purchase_invoice",
+    "file": "sales_invoice.py",
+    "line": 2540
+  },
+  {
+    "type": "function",
+    "name": "make_regional_gl_entries",
+    "file": "sales_invoice.py",
+    "line": 2545
+  },
+  {
+    "type": "function",
+    "name": "make_inter_company_transaction",
+    "file": "sales_invoice.py",
+    "line": 2549
+  },
+  {
+    "type": "function",
+    "name": "get_received_items",
+    "file": "sales_invoice.py",
+    "line": 2743
+  },
+  {
+    "type": "function",
+    "name": "set_purchase_references",
+    "file": "sales_invoice.py",
+    "line": 2774
+  },
+  {
+    "type": "function",
+    "name": "update_pi_items",
+    "file": "sales_invoice.py",
+    "line": 2807
+  },
+  {
+    "type": "function",
+    "name": "update_pr_items",
+    "file": "sales_invoice.py",
+    "line": 2827
+  },
+  {
+    "type": "function",
+    "name": "get_delivery_note_details",
+    "file": "sales_invoice.py",
+    "line": 2834
+  },
+  {
+    "type": "function",
+    "name": "get_sales_invoice_details",
+    "file": "sales_invoice.py",
+    "line": 2842
+  },
+  {
+    "type": "function",
+    "name": "get_pd_details",
+    "file": "sales_invoice.py",
+    "line": 2861
+  },
+  {
+    "type": "function",
+    "name": "update_taxes",
+    "file": "sales_invoice.py",
+    "line": 2880
+  },
+  {
+    "type": "function",
+    "name": "update_address",
+    "file": "sales_invoice.py",
+    "line": 2907
+  },
+  {
+    "type": "function",
+    "name": "get_loyalty_programs",
+    "file": "sales_invoice.py",
+    "line": 2918
+  },
+  {
+    "type": "function",
+    "name": "create_invoice_discounting",
+    "file": "sales_invoice.py",
+    "line": 2936
+  },
+  {
+    "type": "function",
+    "name": "update_multi_mode_option",
+    "file": "sales_invoice.py",
+    "line": 2953
+  },
+  {
+    "type": "function",
+    "name": "get_all_mode_of_payments",
+    "file": "sales_invoice.py",
+    "line": 2983
+  },
+  {
+    "type": "function",
+    "name": "get_mode_of_payments_info",
+    "file": "sales_invoice.py",
+    "line": 2994
+  },
+  {
+    "type": "function",
+    "name": "get_mode_of_payment_info",
+    "file": "sales_invoice.py",
+    "line": 3016
+  },
+  {
+    "type": "function",
+    "name": "create_dunning",
+    "file": "sales_invoice.py",
+    "line": 3028
+  },
+  {
+    "type": "function",
+    "name": "check_if_return_invoice_linked_with_payment_entry",
+    "file": "sales_invoice.py",
+    "line": 3079
+  },
+  {
+    "type": "function",
+    "name": "__init__",
+    "file": "sales_invoice.py",
+    "line": 253
+  },
+  {
+    "type": "function",
+    "name": "set_indicator",
+    "file": "sales_invoice.py",
+    "line": 272
+  },
+  {
+    "type": "function",
+    "name": "onload",
+    "file": "sales_invoice.py",
+    "line": 290
+  },
+  {
+    "type": "function",
+    "name": "validate",
+    "file": "sales_invoice.py",
+    "line": 298
+  },
+  {
+    "type": "function",
+    "name": "validate_accounts",
+    "file": "sales_invoice.py",
+    "line": 379
+  },
+  {
+    "type": "function",
+    "name": "validate_for_repost",
+    "file": "sales_invoice.py",
+    "line": 384
+  },
+  {
+    "type": "function",
+    "name": "validate_fixed_asset",
+    "file": "sales_invoice.py",
+    "line": 391
+  },
+  {
+    "type": "function",
+    "name": "validate_item_cost_centers",
+    "file": "sales_invoice.py",
+    "line": 421
+  },
+  {
+    "type": "function",
+    "name": "validate_income_account",
+    "file": "sales_invoice.py",
+    "line": 425
+  },
+  {
+    "type": "function",
+    "name": "before_save",
+    "file": "sales_invoice.py",
+    "line": 429
+  },
+  {
+    "type": "function",
+    "name": "before_submit",
+    "file": "sales_invoice.py",
+    "line": 433
+  },
+  {
+    "type": "function",
+    "name": "on_submit",
+    "file": "sales_invoice.py",
+    "line": 436
+  },
+  {
+    "type": "function",
+    "name": "validate_pos_return",
+    "file": "sales_invoice.py",
+    "line": 518
+  },
+  {
+    "type": "function",
+    "name": "validate_pos_paid_amount",
+    "file": "sales_invoice.py",
+    "line": 531
+  },
+  {
+    "type": "function",
+    "name": "check_if_consolidated_invoice",
+    "file": "sales_invoice.py",
+    "line": 535
+  },
+  {
+    "type": "function",
+    "name": "check_if_created_using_pos_and_pos_closing_entry_generated",
+    "file": "sales_invoice.py",
+    "line": 551
+  },
+  {
+    "type": "function",
+    "name": "before_cancel",
+    "file": "sales_invoice.py",
+    "line": 564
+  },
+  {
+    "type": "function",
+    "name": "on_cancel",
+    "file": "sales_invoice.py",
+    "line": 572
+  },
+  {
+    "type": "function",
+    "name": "update_status_updater_args",
+    "file": "sales_invoice.py",
+    "line": 651
+  },
+  {
+    "type": "function",
+    "name": "check_credit_limit",
+    "file": "sales_invoice.py",
+    "line": 695
+  },
+  {
+    "type": "function",
+    "name": "unlink_sales_invoice_from_timesheets",
+    "file": "sales_invoice.py",
+    "line": 715
+  },
+  {
+    "type": "function",
+    "name": "cancel_pos_invoice_credit_note_generated_during_sales_invoice_mode",
+    "file": "sales_invoice.py",
+    "line": 722
+  },
+  {
+    "type": "function",
+    "name": "set_missing_values",
+    "file": "sales_invoice.py",
+    "line": 732
+  },
+  {
+    "type": "function",
+    "name": "reset_mode_of_payments",
+    "file": "sales_invoice.py",
+    "line": 768
+  },
+  {
+    "type": "function",
+    "name": "update_time_sheet",
+    "file": "sales_invoice.py",
+    "line": 774
+  },
+  {
+    "type": "function",
+    "name": "update_billed_qty_in_scio",
+    "file": "sales_invoice.py",
+    "line": 785
+  },
+  {
+    "type": "function",
+    "name": "update_time_sheet_detail",
+    "file": "sales_invoice.py",
+    "line": 806
+  },
+  {
+    "type": "function",
+    "name": "on_update_after_submit",
+    "file": "sales_invoice.py",
+    "line": 815
+  },
+  {
+    "type": "function",
+    "name": "set_paid_amount",
+    "file": "sales_invoice.py",
+    "line": 834
+  },
+  {
+    "type": "function",
+    "name": "set_account_for_mode_of_payment",
+    "file": "sales_invoice.py",
+    "line": 846
+  },
+  {
+    "type": "function",
+    "name": "validate_time_sheets_are_submitted",
+    "file": "sales_invoice.py",
+    "line": 850
+  },
+  {
+    "type": "function",
+    "name": "set_pos_fields",
+    "file": "sales_invoice.py",
+    "line": 857
+  },
+  {
+    "type": "function",
+    "name": "get_company_abbr",
+    "file": "sales_invoice.py",
+    "line": 956
+  },
+  {
+    "type": "function",
+    "name": "validate_debit_to_acc",
+    "file": "sales_invoice.py",
+    "line": 959
+  },
+  {
+    "type": "function",
+    "name": "clear_unallocated_mode_of_payments",
+    "file": "sales_invoice.py",
+    "line": 994
+  },
+  {
+    "type": "function",
+    "name": "validate_with_previous_doc",
+    "file": "sales_invoice.py",
+    "line": 1003
+  },
+  {
+    "type": "function",
+    "name": "set_against_income_account",
+    "file": "sales_invoice.py",
+    "line": 1048
+  },
+  {
+    "type": "function",
+    "name": "force_set_against_income_account",
+    "file": "sales_invoice.py",
+    "line": 1056
+  },
+  {
+    "type": "function",
+    "name": "add_remarks",
+    "file": "sales_invoice.py",
+    "line": 1060
+  },
+  {
+    "type": "function",
+    "name": "validate_auto_set_posting_time",
+    "file": "sales_invoice.py",
+    "line": 1070
+  },
+  {
+    "type": "function",
+    "name": "so_dn_required",
+    "file": "sales_invoice.py",
+    "line": 1077
+  },
+  {
+    "type": "function",
+    "name": "validate_proj_cust",
+    "file": "sales_invoice.py",
+    "line": 1097
+  },
+  {
+    "type": "function",
+    "name": "validate_pos",
+    "file": "sales_invoice.py",
+    "line": 1108
+  },
+  {
+    "type": "function",
+    "name": "validate_created_using_pos",
+    "file": "sales_invoice.py",
+    "line": 1116
+  },
+  {
+    "type": "function",
+    "name": "validate_full_payment",
+    "file": "sales_invoice.py",
+    "line": 1126
+  },
+  {
+    "type": "function",
+    "name": "validate_pos_opening_entry",
+    "file": "sales_invoice.py",
+    "line": 1141
+  },
+  {
+    "type": "function",
+    "name": "validate_warehouse",
+    "file": "sales_invoice.py",
+    "line": 1170
+  },
+  {
+    "type": "function",
+    "name": "validate_delivery_note",
+    "file": "sales_invoice.py",
+    "line": 1181
+  },
+  {
+    "type": "function",
+    "name": "allow_write_off_only_on_pos",
+    "file": "sales_invoice.py",
+    "line": 1194
+  },
+  {
+    "type": "function",
+    "name": "validate_subcontracted_sales_order",
+    "file": "sales_invoice.py",
+    "line": 1198
+  },
+  {
+    "type": "function",
+    "name": "validate_scio_self_rm_qty",
+    "file": "sales_invoice.py",
+    "line": 1215
+  },
+  {
+    "type": "function",
+    "name": "validate_write_off_account",
+    "file": "sales_invoice.py",
+    "line": 1240
+  },
+  {
+    "type": "function",
+    "name": "validate_account_for_change_amount",
+    "file": "sales_invoice.py",
+    "line": 1247
+  },
+  {
+    "type": "function",
+    "name": "validate_dropship_item",
+    "file": "sales_invoice.py",
+    "line": 1251
+  },
+  {
+    "type": "function",
+    "name": "update_current_stock",
+    "file": "sales_invoice.py",
+    "line": 1263
+  },
+  {
+    "type": "function",
+    "name": "update_packing_list",
+    "file": "sales_invoice.py",
+    "line": 1270
+  },
+  {
+    "type": "function",
+    "name": "set_billing_hours_and_amount",
+    "file": "sales_invoice.py",
+    "line": 1278
+  },
+  {
+    "type": "function",
+    "name": "update_timesheet_billing_for_project",
+    "file": "sales_invoice.py",
+    "line": 1288
+  },
+  {
+    "type": "function",
+    "name": "is_auto_fetch_timesheet_enabled",
+    "file": "sales_invoice.py",
+    "line": 1295
+  },
+  {
+    "type": "function",
+    "name": "add_timesheet_data",
+    "file": "sales_invoice.py",
+    "line": 1299
+  },
+  {
+    "type": "function",
+    "name": "calculate_billing_amount_for_timesheet",
+    "file": "sales_invoice.py",
+    "line": 1317
+  },
+  {
+    "type": "function",
+    "name": "get_warehouse",
+    "file": "sales_invoice.py",
+    "line": 1324
+  },
+  {
+    "type": "function",
+    "name": "set_income_account_for_fixed_assets",
+    "file": "sales_invoice.py",
+    "line": 1346
+  },
+  {
+    "type": "function",
+    "name": "check_prev_docstatus",
+    "file": "sales_invoice.py",
+    "line": 1350
+  },
+  {
+    "type": "function",
+    "name": "split_asset_based_on_sale_qty",
+    "file": "sales_invoice.py",
+    "line": 1364
+  },
+  {
+    "type": "function",
+    "name": "get_asset_qty",
+    "file": "sales_invoice.py",
+    "line": 1378
+  },
+  {
+    "type": "function",
+    "name": "process_asset_depreciation",
+    "file": "sales_invoice.py",
+    "line": 1409
+  },
+  {
+    "type": "function",
+    "name": "depreciate_asset_on_sale",
+    "file": "sales_invoice.py",
+    "line": 1417
+  },
+  {
+    "type": "function",
+    "name": "get_note_for_asset_sale",
+    "file": "sales_invoice.py",
+    "line": 1428
+  },
+  {
+    "type": "function",
+    "name": "restore_asset",
+    "file": "sales_invoice.py",
+    "line": 1435
+  },
+  {
+    "type": "function",
+    "name": "get_note_for_asset_return",
+    "file": "sales_invoice.py",
+    "line": 1449
+  },
+  {
+    "type": "function",
+    "name": "update_asset",
+    "file": "sales_invoice.py",
+    "line": 1461
+  },
+  {
+    "type": "function",
+    "name": "get_disposal_date",
+    "file": "sales_invoice.py",
+    "line": 1485
+  },
+  {
+    "type": "function",
+    "name": "make_gl_entries",
+    "file": "sales_invoice.py",
+    "line": 1493
+  },
+  {
+    "type": "function",
+    "name": "get_gl_entries",
+    "file": "sales_invoice.py",
+    "line": 1534
+  },
+  {
+    "type": "function",
+    "name": "make_customer_gl_entry",
+    "file": "sales_invoice.py",
+    "line": 1562
+  },
+  {
+    "type": "function",
+    "name": "make_tax_gl_entries",
+    "file": "sales_invoice.py",
+    "line": 1604
+  },
+  {
+    "type": "function",
+    "name": "make_internal_transfer_gl_entries",
+    "file": "sales_invoice.py",
+    "line": 1635
+  },
+  {
+    "type": "function",
+    "name": "make_item_gl_entries",
+    "file": "sales_invoice.py",
+    "line": 1653
+  },
+  {
+    "type": "function",
+    "name": "get_gl_entries_for_fixed_asset",
+    "file": "sales_invoice.py",
+    "line": 1705
+  },
+  {
+    "type": "function",
+    "name": "enable_discount_accounting",
+    "file": "sales_invoice.py",
+    "line": 1732
+  },
+  {
+    "type": "function",
+    "name": "make_loyalty_point_redemption_gle",
+    "file": "sales_invoice.py",
+    "line": 1740
+  },
+  {
+    "type": "function",
+    "name": "make_pos_gl_entries",
+    "file": "sales_invoice.py",
+    "line": 1774
+  },
+  {
+    "type": "function",
+    "name": "get_gle_for_change_amount",
+    "file": "sales_invoice.py",
+    "line": 1832
+  },
+  {
+    "type": "function",
+    "name": "make_write_off_gl_entry",
+    "file": "sales_invoice.py",
+    "line": 1873
+  },
+  {
+    "type": "function",
+    "name": "make_gle_for_rounding_adjustment",
+    "file": "sales_invoice.py",
+    "line": 1929
+  },
+  {
+    "type": "function",
+    "name": "update_billing_status_in_dn",
+    "file": "sales_invoice.py",
+    "line": 1980
+  },
+  {
+    "type": "function",
+    "name": "on_recurring",
+    "file": "sales_invoice.py",
+    "line": 2006
+  },
+  {
+    "type": "function",
+    "name": "update_project",
+    "file": "sales_invoice.py",
+    "line": 2010
+  },
+  {
+    "type": "function",
+    "name": "verify_payment_amount_is_positive",
+    "file": "sales_invoice.py",
+    "line": 2021
+  },
+  {
+    "type": "function",
+    "name": "verify_payment_amount_is_negative",
+    "file": "sales_invoice.py",
+    "line": 2026
+  },
+  {
+    "type": "function",
+    "name": "make_loyalty_point_entry",
+    "file": "sales_invoice.py",
+    "line": 2032
+  },
+  {
+    "type": "function",
+    "name": "delete_loyalty_point_entry",
+    "file": "sales_invoice.py",
+    "line": 2072
+  },
+  {
+    "type": "function",
+    "name": "set_loyalty_program_tier",
+    "file": "sales_invoice.py",
+    "line": 2097
+  },
+  {
+    "type": "function",
+    "name": "get_returned_amount",
+    "file": "sales_invoice.py",
+    "line": 2107
+  },
+  {
+    "type": "function",
+    "name": "apply_loyalty_points",
+    "file": "sales_invoice.py",
+    "line": 2120
+  },
+  {
+    "type": "function",
+    "name": "set_status",
+    "file": "sales_invoice.py",
+    "line": 2164
+  },
+  {
+    "type": "function",
+    "name": "is_subcontracted",
+    "file": "sales_invoice.py",
+    "line": 2211
+  },
+  {
+    "type": "function",
+    "name": "set_missing_values",
+    "file": "sales_invoice.py",
+    "line": 2401
+  },
+  {
+    "type": "function",
+    "name": "update_item",
+    "file": "sales_invoice.py",
+    "line": 2406
+  },
+  {
+    "type": "function",
+    "name": "set_missing_values",
+    "file": "sales_invoice.py",
+    "line": 2567
+  },
+  {
+    "type": "function",
+    "name": "update_details",
+    "file": "sales_invoice.py",
+    "line": 2571
+  },
+  {
+    "type": "function",
+    "name": "update_item",
+    "file": "sales_invoice.py",
+    "line": 2673
+  },
+  {
+    "type": "function",
+    "name": "append_payment",
+    "file": "sales_invoice.py",
+    "line": 2954
+  },
+  {
+    "type": "function",
+    "name": "postprocess_dunning",
+    "file": "sales_invoice.py",
+    "line": 3031
+  },
+  {
+    "type": "function",
+    "name": "timesheet_sum",
+    "file": "sales_invoice.py",
+    "line": 1318
+  },
+  {
+    "type": "function",
+    "name": "_update_asset",
+    "file": "sales_invoice.py",
+    "line": 1466
+  },
+  {
+    "type": "function",
+    "name": "_validate_address_link",
+    "file": "sales_invoice.py",
+    "line": 2572
+  },
+  {
+    "type": "function",
+    "name": "get_data",
+    "file": "sales_invoice_dashboard.py",
+    "line": 4
+  },
+  {
+    "type": "class",
+    "name": "TestSalesInvoice",
+    "file": "test_sales_invoice.py",
+    "line": 54,
+    "inherits": [
+      "ERPNextTestSuite"
+    ]
+  },
+  {
+    "type": "function",
+    "name": "make_item_for_si",
+    "file": "test_sales_invoice.py",
+    "line": 4695
+  },
+  {
+    "type": "function",
+    "name": "set_advance_flag",
+    "file": "test_sales_invoice.py",
+    "line": 4704
+  },
+  {
+    "type": "function",
+    "name": "check_gl_entries",
+    "file": "test_sales_invoice.py",
+    "line": 4715
+  },
+  {
+    "type": "function",
+    "name": "create_sales_invoice",
+    "file": "test_sales_invoice.py",
+    "line": 4739
+  },
+  {
+    "type": "function",
+    "name": "create_sales_invoice_against_cost_center",
+    "file": "test_sales_invoice.py",
+    "line": 4835
+  },
+  {
+    "type": "function",
+    "name": "get_outstanding_amount",
+    "file": "test_sales_invoice.py",
+    "line": 4881
+  },
+  {
+    "type": "function",
+    "name": "get_taxes_and_charges",
+    "file": "test_sales_invoice.py",
+    "line": 4900
+  },
+  {
+    "type": "function",
+    "name": "create_internal_parties",
+    "file": "test_sales_invoice.py",
+    "line": 4928
+  },
+  {
+    "type": "function",
+    "name": "create_internal_supplier",
+    "file": "test_sales_invoice.py",
+    "line": 4976
+  },
+  {
+    "type": "function",
+    "name": "setup_accounts",
+    "file": "test_sales_invoice.py",
+    "line": 4997
+  },
+  {
+    "type": "function",
+    "name": "add_taxes",
+    "file": "test_sales_invoice.py",
+    "line": 5010
+  },
+  {
+    "type": "function",
+    "name": "setUp",
+    "file": "test_sales_invoice.py",
+    "line": 55
+  },
+  {
+    "type": "function",
+    "name": "test_invalid_rate_without_override",
+    "file": "test_sales_invoice.py",
+    "line": 73
+  },
+  {
+    "type": "function",
+    "name": "tearDown",
+    "file": "test_sales_invoice.py",
+    "line": 89
+  },
+  {
+    "type": "function",
+    "name": "make",
+    "file": "test_sales_invoice.py",
+    "line": 92
+  },
+  {
+    "type": "function",
+    "name": "setUpClass",
+    "file": "test_sales_invoice.py",
+    "line": 100
+  },
+  {
+    "type": "function",
+    "name": "tearDownClass",
+    "file": "test_sales_invoice.py",
+    "line": 108
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_qty",
+    "file": "test_sales_invoice.py",
+    "line": 111
+  },
+  {
+    "type": "function",
+    "name": "test_timestamp_change",
+    "file": "test_sales_invoice.py",
+    "line": 121
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_change_naming_series",
+    "file": "test_sales_invoice.py",
+    "line": 138
+  },
+  {
+    "type": "function",
+    "name": "test_add_terms_after_save",
+    "file": "test_sales_invoice.py",
+    "line": 151
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_calculation_base_currency",
+    "file": "test_sales_invoice.py",
+    "line": 158
+  },
+  {
+    "type": "function",
+    "name": "test_payment_entry_unlink_against_invoice",
+    "file": "test_sales_invoice.py",
+    "line": 208
+  },
+  {
+    "type": "function",
+    "name": "test_payment_entry_unlink_against_standalone_credit_note",
+    "file": "test_sales_invoice.py",
+    "line": 235
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_calculation_export_currency",
+    "file": "test_sales_invoice.py",
+    "line": 276
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_with_discount_and_inclusive_tax",
+    "file": "test_sales_invoice.py",
+    "line": 337
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_discount_amount",
+    "file": "test_sales_invoice.py",
+    "line": 395
+  },
+  {
+    "type": "function",
+    "name": "test_discount_amount_gl_entry",
+    "file": "test_sales_invoice.py",
+    "line": 476
+  },
+  {
+    "type": "function",
+    "name": "test_tax_calculation_with_multiple_items",
+    "file": "test_sales_invoice.py",
+    "line": 539
+  },
+  {
+    "type": "function",
+    "name": "test_tax_calculation_with_item_tax_template",
+    "file": "test_sales_invoice.py",
+    "line": 567
+  },
+  {
+    "type": "function",
+    "name": "test_tax_calculation_with_multiple_items_and_discount",
+    "file": "test_sales_invoice.py",
+    "line": 633
+  },
+  {
+    "type": "function",
+    "name": "test_inclusive_rate_validations",
+    "file": "test_sales_invoice.py",
+    "line": 666
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_calculation_base_currency_with_tax_inclusive_price",
+    "file": "test_sales_invoice.py",
+    "line": 683
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_calculation_export_currency_with_tax_inclusive_price",
+    "file": "test_sales_invoice.py",
+    "line": 757
+  },
+  {
+    "type": "function",
+    "name": "test_outstanding",
+    "file": "test_sales_invoice.py",
+    "line": 843
+  },
+  {
+    "type": "function",
+    "name": "test_rounded_total_with_cash_discount",
+    "file": "test_sales_invoice.py",
+    "line": 851
+  },
+  {
+    "type": "function",
+    "name": "test_payment",
+    "file": "test_sales_invoice.py",
+    "line": 873
+  },
+  {
+    "type": "function",
+    "name": "test_outstanding_on_cost_center_allocation",
+    "file": "test_sales_invoice.py",
+    "line": 892
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_gl_entry_without_perpetual_inventory",
+    "file": "test_sales_invoice.py",
+    "line": 940
+  },
+  {
+    "type": "function",
+    "name": "test_pos_gl_entry_with_perpetual_inventory",
+    "file": "test_sales_invoice.py",
+    "line": 981
+  },
+  {
+    "type": "function",
+    "name": "test_pos_returns_with_repayment",
+    "file": "test_sales_invoice.py",
+    "line": 1027
+  },
+  {
+    "type": "function",
+    "name": "test_pos_change_amount",
+    "file": "test_sales_invoice.py",
+    "line": 1055
+  },
+  {
+    "type": "function",
+    "name": "test_auto_write_off_amount",
+    "file": "test_sales_invoice.py",
+    "line": 1096
+  },
+  {
+    "type": "function",
+    "name": "test_ledger_entries_of_return_pos_invoice",
+    "file": "test_sales_invoice.py",
+    "line": 1137
+  },
+  {
+    "type": "function",
+    "name": "test_pos_with_no_gl_entry_for_change_amount",
+    "file": "test_sales_invoice.py",
+    "line": 1175
+  },
+  {
+    "type": "function",
+    "name": "validate_pos_gl_entry",
+    "file": "test_sales_invoice.py",
+    "line": 1226
+  },
+  {
+    "type": "function",
+    "name": "test_bin_details_of_packed_item",
+    "file": "test_sales_invoice.py",
+    "line": 1285
+  },
+  {
+    "type": "function",
+    "name": "test_pos_si_without_payment",
+    "file": "test_sales_invoice.py",
+    "line": 1325
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_gl_entry_with_perpetual_inventory_no_item_code",
+    "file": "test_sales_invoice.py",
+    "line": 1338
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_gl_entry_with_perpetual_inventory_non_stock_item",
+    "file": "test_sales_invoice.py",
+    "line": 1367
+  },
+  {
+    "type": "function",
+    "name": "_insert_purchase_receipt",
+    "file": "test_sales_invoice.py",
+    "line": 1391
+  },
+  {
+    "type": "function",
+    "name": "_insert_delivery_note",
+    "file": "test_sales_invoice.py",
+    "line": 1397
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_with_advance",
+    "file": "test_sales_invoice.py",
+    "line": 1407
+  },
+  {
+    "type": "function",
+    "name": "test_serialized",
+    "file": "test_sales_invoice.py",
+    "line": 1450
+  },
+  {
+    "type": "function",
+    "name": "test_serialized_cancel",
+    "file": "test_sales_invoice.py",
+    "line": 1486
+  },
+  {
+    "type": "function",
+    "name": "test_serial_numbers_against_delivery_note",
+    "file": "test_sales_invoice.py",
+    "line": 1497
+  },
+  {
+    "type": "function",
+    "name": "test_return_sales_invoice",
+    "file": "test_sales_invoice.py",
+    "line": 1519
+  },
+  {
+    "type": "function",
+    "name": "test_zero_qty_return_invoice_with_stock_effect",
+    "file": "test_sales_invoice.py",
+    "line": 1607
+  },
+  {
+    "type": "function",
+    "name": "test_return_invoice_with_account_mismatch",
+    "file": "test_sales_invoice.py",
+    "line": 1613
+  },
+  {
+    "type": "function",
+    "name": "test_gle_made_when_asset_is_returned",
+    "file": "test_sales_invoice.py",
+    "line": 1626
+  },
+  {
+    "type": "function",
+    "name": "test_incoming_rate_for_stand_alone_credit_note",
+    "file": "test_sales_invoice.py",
+    "line": 1658
+  },
+  {
+    "type": "function",
+    "name": "test_discount_on_net_total",
+    "file": "test_sales_invoice.py",
+    "line": 1683
+  },
+  {
+    "type": "function",
+    "name": "test_multi_currency_gle",
+    "file": "test_sales_invoice.py",
+    "line": 1747
+  },
+  {
+    "type": "function",
+    "name": "test_gle_in_transaction_currency",
+    "file": "test_sales_invoice.py",
+    "line": 1804
+  },
+  {
+    "type": "function",
+    "name": "test_invalid_currency",
+    "file": "test_sales_invoice.py",
+    "line": 1847
+  },
+  {
+    "type": "function",
+    "name": "test_create_so_with_margin",
+    "file": "test_sales_invoice.py",
+    "line": 1900
+  },
+  {
+    "type": "function",
+    "name": "test_outstanding_amount_after_advance_jv_cancellation",
+    "file": "test_sales_invoice.py",
+    "line": 1911
+  },
+  {
+    "type": "function",
+    "name": "test_outstanding_amount_after_advance_payment_entry_cancellation",
+    "file": "test_sales_invoice.py",
+    "line": 1951
+  },
+  {
+    "type": "function",
+    "name": "test_multiple_uom_in_selling",
+    "file": "test_sales_invoice.py",
+    "line": 2033
+  },
+  {
+    "type": "function",
+    "name": "test_item_wise_tax_breakup",
+    "file": "test_sales_invoice.py",
+    "line": 2070
+  },
+  {
+    "type": "function",
+    "name": "create_si_to_test_tax_breakup",
+    "file": "test_sales_invoice.py",
+    "line": 2094
+  },
+  {
+    "type": "function",
+    "name": "test_company_monthly_sales",
+    "file": "test_sales_invoice.py",
+    "line": 2134
+  },
+  {
+    "type": "function",
+    "name": "test_rounding_adjustment",
+    "file": "test_sales_invoice.py",
+    "line": 2147
+  },
+  {
+    "type": "function",
+    "name": "test_rounding_adjustment_2",
+    "file": "test_sales_invoice.py",
+    "line": 2191
+  },
+  {
+    "type": "function",
+    "name": "test_rounding_adjustment_3",
+    "file": "test_sales_invoice.py",
+    "line": 2248
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_with_shipping_rule",
+    "file": "test_sales_invoice.py",
+    "line": 2336
+  },
+  {
+    "type": "function",
+    "name": "test_create_invoice_without_terms",
+    "file": "test_sales_invoice.py",
+    "line": 2354
+  },
+  {
+    "type": "function",
+    "name": "test_duplicate_due_date_in_terms",
+    "file": "test_sales_invoice.py",
+    "line": 2361
+  },
+  {
+    "type": "function",
+    "name": "test_credit_note",
+    "file": "test_sales_invoice.py",
+    "line": 2368
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_with_cost_center",
+    "file": "test_sales_invoice.py",
+    "line": 2393
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_with_project_link",
+    "file": "test_sales_invoice.py",
+    "line": 2421
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_without_cost_center",
+    "file": "test_sales_invoice.py",
+    "line": 2464
+  },
+  {
+    "type": "function",
+    "name": "test_deferred_revenue",
+    "file": "test_sales_invoice.py",
+    "line": 2491
+  },
+  {
+    "type": "function",
+    "name": "test_deferred_revenue_missing_account",
+    "file": "test_sales_invoice.py",
+    "line": 2535
+  },
+  {
+    "type": "function",
+    "name": "test_fixed_deferred_revenue",
+    "file": "test_sales_invoice.py",
+    "line": 2547
+  },
+  {
+    "type": "function",
+    "name": "test_validate_inter_company_transaction_address_links",
+    "file": "test_sales_invoice.py",
+    "line": 2591
+  },
+  {
+    "type": "function",
+    "name": "test_inter_company_transaction",
+    "file": "test_sales_invoice.py",
+    "line": 2647
+  },
+  {
+    "type": "function",
+    "name": "test_inter_company_transaction_without_default_warehouse",
+    "file": "test_sales_invoice.py",
+    "line": 2676
+  },
+  {
+    "type": "function",
+    "name": "test_sle_for_target_warehouse",
+    "file": "test_sales_invoice.py",
+    "line": 2730
+  },
+  {
+    "type": "function",
+    "name": "test_internal_transfer_gl_entry",
+    "file": "test_sales_invoice.py",
+    "line": 2761
+  },
+  {
+    "type": "function",
+    "name": "test_internal_transfer_gl_precision_issues",
+    "file": "test_sales_invoice.py",
+    "line": 2837
+  },
+  {
+    "type": "function",
+    "name": "test_item_tax_net_range",
+    "file": "test_sales_invoice.py",
+    "line": 2908
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_with_discount_accounting_enabled",
+    "file": "test_sales_invoice.py",
+    "line": 2955
+  },
+  {
+    "type": "function",
+    "name": "test_additional_discount_for_sales_invoice_with_discount_accounting_enabled",
+    "file": "test_sales_invoice.py",
+    "line": 2972
+  },
+  {
+    "type": "function",
+    "name": "test_asset_depreciation_on_sale_with_pro_rata",
+    "file": "test_sales_invoice.py",
+    "line": 3057
+  },
+  {
+    "type": "function",
+    "name": "test_asset_depreciation_on_sale_without_pro_rata",
+    "file": "test_sales_invoice.py",
+    "line": 3083
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_against_supplier",
+    "file": "test_sales_invoice.py",
+    "line": 3114
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_against_supplier_usd_with_dimensions",
+    "file": "test_sales_invoice.py",
+    "line": 3159
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_cancel_with_common_party_advance_jv",
+    "file": "test_sales_invoice.py",
+    "line": 3237
+  },
+  {
+    "type": "function",
+    "name": "test_payment_statuses",
+    "file": "test_sales_invoice.py",
+    "line": 3281
+  },
+  {
+    "type": "function",
+    "name": "test_update_invoice_status",
+    "file": "test_sales_invoice.py",
+    "line": 3327
+  },
+  {
+    "type": "function",
+    "name": "test_sales_commission",
+    "file": "test_sales_invoice.py",
+    "line": 3363
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_submission_post_account_freezing_date",
+    "file": "test_sales_invoice.py",
+    "line": 3398
+  },
+  {
+    "type": "function",
+    "name": "test_over_billing_case_against_delivery_note",
+    "file": "test_sales_invoice.py",
+    "line": 3410
+  },
+  {
+    "type": "function",
+    "name": "test_multi_currency_deferred_revenue_via_journal_entry",
+    "file": "test_sales_invoice.py",
+    "line": 3442
+  },
+  {
+    "type": "function",
+    "name": "test_standalone_serial_no_return",
+    "file": "test_sales_invoice.py",
+    "line": 3512
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_with_disabled_account",
+    "file": "test_sales_invoice.py",
+    "line": 3519
+  },
+  {
+    "type": "function",
+    "name": "test_gain_loss_with_advance_entry",
+    "file": "test_sales_invoice.py",
+    "line": 3556
+  },
+  {
+    "type": "function",
+    "name": "test_batch_expiry_for_sales_invoice_return",
+    "file": "test_sales_invoice.py",
+    "line": 3615
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_with_payable_tax_account",
+    "file": "test_sales_invoice.py",
+    "line": 3646
+  },
+  {
+    "type": "function",
+    "name": "test_advance_entries_as_liability",
+    "file": "test_sales_invoice.py",
+    "line": 3662
+  },
+  {
+    "type": "function",
+    "name": "test_sales_invoice_without_customer_group_and_territory",
+    "file": "test_sales_invoice.py",
+    "line": 3719
+  },
+  {
+    "type": "function",
+    "name": "test_sales_return_negative_rate",
+    "file": "test_sales_invoice.py",
+    "line": 3737
+  },
+  {
+    "type": "function",
+    "name": "test_partial_allocation_on_advance_as_liability",
+    "file": "test_sales_invoice.py",
+    "line": 3744
+  },
+  {
+    "type": "function",
+    "name": "test_loyalty_points_redemption_with_shopping_cart",
+    "file": "test_sales_invoice.py",
+    "line": 3831
+  },
+  {
+    "type": "function",
+    "name": "test_pulling_advance_based_on_debit_to",
+    "file": "test_sales_invoice.py",
+    "line": 3890
+  },
+  {
+    "type": "function",
+    "name": "test_taxes_merging_from_delivery_note",
+    "file": "test_sales_invoice.py",
+    "line": 3917
+  },
+  {
+    "type": "function",
+    "name": "test_pos_returns_without_update_outstanding_for_self",
+    "file": "test_sales_invoice.py",
+    "line": 4016
+  },
+  {
+    "type": "function",
+    "name": "test_validation_on_opening_invoice_with_rounding",
+    "file": "test_sales_invoice.py",
+    "line": 4048
+  },
+  {
+    "type": "function",
+    "name": "_create_opening_roundoff_account",
+    "file": "test_sales_invoice.py",
+    "line": 4055
+  },
+  {
+    "type": "function",
+    "name": "test_opening_invoice_with_rounding_adjustment",
+    "file": "test_sales_invoice.py",
+    "line": 4082
+  },
+  {
+    "type": "function",
+    "name": "_create_opening_invoice_with_inclusive_tax",
+    "file": "test_sales_invoice.py",
+    "line": 4099
+  },
+  {
+    "type": "function",
+    "name": "test_rounding_validation_for_opening_with_inclusive_tax",
+    "file": "test_sales_invoice.py",
+    "line": 4123
+  },
+  {
+    "type": "function",
+    "name": "test_ledger_entries_on_opening_invoice_with_rounding_loss_by_inclusive_tax",
+    "file": "test_sales_invoice.py",
+    "line": 4129
+  },
+  {
+    "type": "function",
+    "name": "test_common_party_with_foreign_currency_jv",
+    "file": "test_sales_invoice.py",
+    "line": 4151
+  },
+  {
+    "type": "function",
+    "name": "test_common_party_with_different_currency_in_debtor_and_creditor",
+    "file": "test_sales_invoice.py",
+    "line": 4233
+  },
+  {
+    "type": "function",
+    "name": "test_invoice_remarks",
+    "file": "test_sales_invoice.py",
+    "line": 4314
+  },
+  {
+    "type": "function",
+    "name": "test_gl_voucher_subtype",
+    "file": "test_sales_invoice.py",
+    "line": 4322
+  },
+  {
+    "type": "function",
+    "name": "test_total_billed_amount",
+    "file": "test_sales_invoice.py",
+    "line": 4341
+  },
+  {
+    "type": "function",
+    "name": "test_total_billed_amount_with_different_projects",
+    "file": "test_sales_invoice.py",
+    "line": 4356
+  },
+  {
+    "type": "function",
+    "name": "test_pos_returns_with_party_account_currency",
+    "file": "test_sales_invoice.py",
+    "line": 4381
+  },
+  {
+    "type": "function",
+    "name": "test_create_return_invoice_for_self_update",
+    "file": "test_sales_invoice.py",
+    "line": 4405
+  },
+  {
+    "type": "function",
+    "name": "test_prevents_fully_returned_invoice_with_zero_quantity",
+    "file": "test_sales_invoice.py",
+    "line": 4434
+  },
+  {
+    "type": "function",
+    "name": "test_pos_sales_invoice_creation_during_pos_invoice_mode",
+    "file": "test_sales_invoice.py",
+    "line": 4448
+  },
+  {
+    "type": "function",
+    "name": "test_stand_alone_credit_note_valuation",
+    "file": "test_sales_invoice.py",
+    "line": 4469
+  },
+  {
+    "type": "function",
+    "name": "test_stand_alone_credit_note_zero_valuation",
+    "file": "test_sales_invoice.py",
+    "line": 4508
+  },
+  {
+    "type": "function",
+    "name": "test_system_generated_exchange_gain_or_loss_je_after_repost",
+    "file": "test_sales_invoice.py",
+    "line": 4548
+  },
+  {
+    "type": "function",
+    "name": "test_non_batchwise_valuation_for_moving_average",
+    "file": "test_sales_invoice.py",
+    "line": 4601
+  },
+  {
+    "type": "function",
+    "name": "_validate_address_link",
+    "file": "test_sales_invoice.py",
+    "line": 2592
+  }
+]
