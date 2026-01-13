@@ -1,4 +1,6 @@
 ERPNext (Sales Invoice Module) Analyzer Tool 
+
+
 The purpose of this work is to implement a code intelligence solution within large legacy software to increase code reuse and efficiency
 
 It is based on the analysis of a real-world ERP system, namely ERPNext, and develops a knowledge graph for code entities, based on the Python Abstract Syntax Tree.
