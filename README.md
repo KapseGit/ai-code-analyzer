@@ -40,7 +40,7 @@ Use the AI context window for reasoning, not for storing code.
 
 **What This Solves**
 
-Prevents context window exhaustion
+**Prevents context window exhaustion**
 
 Eliminates forced summarization
 
