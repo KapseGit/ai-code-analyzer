@@ -1,145 +1,51 @@
-ERPNext (Sales Invoice Module) Analyzer Tool 
+**AI-Assisted Legacy Code Intelligence (RAG-Based)
+Overview**
 
+It offers an artificial intelligence-driven intelligence layer for handling vast bodies of existing code.
 
-The purpose of this work is to implement a code intelligence solution within large legacy software to increase code reuse and efficiency
+It is intended for the solution of a problem that often arises during the usage of AI-based instruments for long-lived enterprise applications.
 
-It is based on the analysis of a real-world ERP system, namely ERPNext, and develops a knowledge graph for code entities, based on the Python Abstract Syntax Tree.
+Moreover, instead of having to put entire files into memory within an AI, what’s more efficient about this model is that it off-loads code comprehension.
 
-The objective would be to allow legacy modernization through the use of AI on millions of lines of undocumented code to create machine-readable architectural knowledge.
+**Problem Statement**
 
-This is actually the building block that makes up RAG, GraphRAG, as well as the migration agents of AI.
+Large legacy applications typically:
 
-What This System Does
+**Are 8-10 Years Old**
 
+Contains thousands of files
 
+Combine backend, frontend, and business logic code in one source control repository
 
-The analyzer examines an actual ERPNext module, extracting automatically:
+Must have strong dependency and versioning requirements
 
-All functions and methods
+When modern AI technology is applied to such systems, the following issues are regularly encountered by developers:
 
+Window full of context after a few large files
 
+Overt summarization that destroys critical reasoning skills
 
-Automatically translates all class declarations, as well as inheritance
+Loss of continuity between the questions
 
-Each module-level dependency (import)
+Misassumptions and behavior hallucinations
+ Elvis This makes the AI system unreliable for understanding, refactoring, or migrating a large feature either.
 
-A body of organized knowledge that AI systems query
+ **Solution Approach**
 
-megaly
+This project uses a Retrieval-Augmented Generation (RAG) approach tailored for legacy codebases.
 
+**Key idea:**
 
+Use the AI context window for reasoning, not for storing code.
 
-This enables the AI to respond to questions like:
+**What This Solves**
 
+Prevents context window exhaustion
 
+Eliminates forced summarization
 
-What happens to the business logic?
+Preserves critical implementation details
 
+Enables reliable multi-session analysis
 
-
-What depends on what?
-
-<|reserved\_special\_token\_105|><|start\_header\_id|>assistant
-
-
-
-What will break if the model changes?
-
-
-
-Architecture
-
-
-
-This system uses AST-based static analysis, not regex or heuristics:
-
-
-
-ERPNext Source Code
-
-&nbsp;       ↓
-
-Python AST Parser
-
-&nbsp;       ↓
-
-Symbol Extractor (functions, classes, inheritance)
-
-&nbsp;       ↓
-
-Dependency Extractor (imports, module coupling)
-
-&nbsp;       ↓
-
-Knowledge Store (JSON + Graph + Human Report)
-
-
-
-How to Run:
-
-git clone https://github.com/KapseGit/ai-code-analyzer.git
-
-cd ai-code-analyzer
-
-python analyzer.py erpnext/erpnext/accounts/doctype/sales\_invoice
-
-
-
-Why This Matters:
-
-
-
-Most AI coding tools only see files and tokens.
-
-This system extracts:
-
-
-
-Structure
-
-Relationships
-
-Architectural meaning
-
-This is what enables:
-
-Safe modernization
-
-AI-Guided Refactoring
-
-Cross-lingual migration
-
-Risk-aware change management
-
-
-
-What I Learned:
-
-
-
-Differences between codebases of enterprises and small projects
-
-
-
-Why AST-based analysis is critical for accuracy
-
-
-
-How knowledge graphs enable AI to reason about code
-
-
-
-Unstructured to Structured to Intelligence    
-
-An unstructured legacy system can be defined as
-
-
-
-Challenges Solved:
-
-Nested classes and inheritance
-
-Import graph extraction
-
-Removal of Duplicate Symbols: Extensive code surfing
-
+Makes AI usable for large-scale refactoring and migration
