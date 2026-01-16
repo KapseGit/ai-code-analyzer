@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+
+# Vector DB / RAG runtime data
+rag/chroma_db/
+rag/__pycache__/
+
+# Model caches
+.cache/
+.huggingface/
+
+# Output & generated files
+output/
+knowledge/
+
+# Logs
+*.log
+# Generated analysis output
+output/
+# RAG generated data
+rag_pipeline/chunks.json
+rag_pipeline/files_raw.json
+

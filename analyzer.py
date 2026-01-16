@@ -1,5 +1,5 @@
 """
-AI Internship – Week 1 Code Analyzer (Audit-Compliant)
+AI Internship – Day 3 Code Analyzer (Audit-Compliant)
 ====================================================
 Extracts a real knowledge graph from ERPNext or any Python legacy system.
 
@@ -100,9 +100,9 @@ class CodeAnalyzer:
                 })
 
         except SyntaxError as e:
-            print(f"⚠️ Syntax error in {file_path}: {e}")
+            print(f" Syntax error in {file_path}: {e}")
         except Exception as e:
-            print(f"⚠️ Failed parsing {file_path}: {e}")
+            print(f" Failed parsing {file_path}: {e}")
 
     # ---------------------------
     def analyze(self):
@@ -122,7 +122,7 @@ class CodeAnalyzer:
         try:
             out.mkdir(exist_ok=True)
         except Exception as e:
-            print(f"❌ Cannot create output directory: {e}")
+            print(f" Cannot create output directory: {e}")
             return
 
         with open(out / "entities.json", "w", encoding="utf-8") as f:
@@ -164,7 +164,7 @@ if __name__ == "__main__":
     root = Path(sys.argv[1])
 
     if not root.exists() or not root.is_dir():
-        print("❌ Invalid directory path")
+        print(" Invalid directory path")
         sys.exit(1)
 
     analyzer = CodeAnalyzer(root)
