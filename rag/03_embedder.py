@@ -1,42 +1,38 @@
 import json
-import hashlib
+from sentence_transformers import SentenceTransformer
 import chromadb
 
-def simple_embedding(text, dim=384):
-    """Deterministic local embedding (no network, no ML)"""
-    h = hashlib.sha256(text.encode("utf-8")).digest()
-    vec = [b / 255 for b in h]
-    return (vec * (dim // len(vec) + 1))[:dim]
+CHROMA_PATH = "./chroma_db"
 
-# Load chunks
 with open("../rag_pipeline/chunks.json", "r", encoding="utf-8") as f:
     chunks = json.load(f)
 
 print(f"Loaded {len(chunks)} chunks")
 
-# Local persistent Chroma
+model = SentenceTransformer("all-MiniLM-L6-v2")
+
 client = chromadb.Client(
     settings=chromadb.Settings(
-        persist_directory="chroma_db",
-        anonymized_telemetry=False,
-        allow_reset=True       
+        persist_directory=CHROMA_PATH
     )
 )
-client.reset()
-collection = client.get_or_create_collection("erpnext_code")
 
-for chunk in chunks:
-    embedding = simple_embedding(chunk["code"])
+collection = client.get_or_create_collection(name="erpnext_code")
+# Embed and store all chunks
+print("Starting embedding process...")
+for i, chunk in enumerate(chunks):
+    try:
+        embedding = model.encode(chunk).tolist()
+        collection.add(
+            embeddings=[embedding],
+            documents=[chunk],
+            ids=[str(i)]
+        )
+        if (i + 1) % 10 == 0:
+            print(f"Embedded {i + 1}/{len(chunks)} chunks")
+    except Exception as e:
+        print(f"Error embedding chunk {i}: {e}")
+        continue
 
-    collection.add(
-        documents=[chunk["code"]],
-        embeddings=[embedding],
-        ids=[str(chunk["chunk_id"])],
-        metadatas=[{
-            "file": chunk["file"],
-            "chunk_index": chunk["chunk_index"]
-        }]
-    )
-
-print("✅ Embeddings stored successfully in ChromaDB (LOCAL MODE)")
-client._system.stop()
+print(f"\nSuccessfully embedded and stored all {len(chunks)} chunks!")
+print(f"Collection now contains {collection.count()} documents")

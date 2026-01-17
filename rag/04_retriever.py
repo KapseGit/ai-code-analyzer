@@ -1,28 +1,25 @@
 import chromadb
+from sentence_transformers import SentenceTransformer
 
-# Load ChromaDB from disk
+CHROMA_PATH = "./chroma_db"
+
 client = chromadb.Client(
     settings=chromadb.Settings(
-        persist_directory="./chroma_db"
+        persist_directory=CHROMA_PATH
     )
 )
 
-# SAFE in all Chroma versions
-collection = client.get_or_create_collection("erpnext_code")
+collection = client.get_collection("erpnext_code")
+model = SentenceTransformer("all-MiniLM-L6-v2")
 
-def search(query, top_k=5):
-    return collection.query(
-        query_texts=[query],
-        n_results=top_k
-    )
+query = input("Ask a question about ERPNext code: ")
+query_embedding = model.encode(query)
+results = collection.query(
+    query_embeddings=[query_embedding],
+    n_results=5
+)
 
-if __name__ == "__main__":
-    query = input("Ask a question about ERPNext code: ")
-    results = search(query)
-
-    print("\n--- Retrieved Code Chunks ---\n")
-
-    for i, doc in enumerate(results["documents"][0]):
-        print(f"\n### Chunk {i+1}")
-        print(doc[:800])  # show first 800 chars
-        print("-" * 60)
+print("\n--- Retrieved Code Chunks ---\n")
+for doc in results["documents"][0]:
+    print(doc[:500])
+    print("-" * 60)
