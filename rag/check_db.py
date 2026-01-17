@@ -1,17 +1,15 @@
 import chromadb
+import os
 
-client = chromadb.Client(
-    settings=chromadb.Settings(
-        persist_directory="chroma_db",
-        anonymized_telemetry=False
-    )
-)
+# Get the directory where this script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+CHROMA_PATH = os.path.join(SCRIPT_DIR, "chroma_db")
 
-collections = client.list_collections()
-print([c.name for c in collections])
+# Ensure chroma_db directory exists
+os.makedirs(CHROMA_PATH, exist_ok=True)
 
-if collections:
-    col = client.get_collection("erpnext_code")
-    print("Document count:", col.count())
-else:
-    print("Document count: 0")
+client = chromadb.PersistentClient(path=CHROMA_PATH)
+
+collection = client.get_collection("erpnext_code")
+print("Collection name:", collection.name)
+print("Document count:", collection.count())
